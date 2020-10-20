@@ -4,14 +4,22 @@ U3Bsp1.py - Exception handling
 Gregor Wagner, 52005240
 """
 
-def calculator :
-    num1 = input("Please enter number: ")
-    num2 = input("Another number: ")
-    return
+def calculator() :
+    try :
+        num1 = int(input("Please enter number: "))
+        num2 = int(input("Another number: "))
+        num3 = num1 / num2
+    except ZeroDivisionError :
+        print("Falsche Eingaben -Versuch gescheitert!")
+    except ValueError :
+        print("Falsche Eingaben -Versuch gescheitert!")
+    else : 
+        print(f"{num1} / {num2} = {num3}")
 
-try:
-    num3 = num1 / num2
-except ZeroDivisionError as identifier:
-    print("Falsche Eingaben -Versuch gescheitert!")
-except ValueError as identifier:
-    print("Falsche Eingaben -Versuch gescheitert!")
+
+
+def main() :
+    calculator()
+
+if __name__ == "__main__":
+    main()

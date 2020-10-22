@@ -1,6 +1,6 @@
 """
 Gregor Wagner
-U3Bsp6.py - 
+U3Bsp6.py - Klassen Kreis, Rechtek, Quadrat mit Methoden
 Gregor Wagner, 52005240
 """
 from cmath import pi as pi

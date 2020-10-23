@@ -1,0 +1,22 @@
+{ 
+	"people": [
+	{"v_name":"Manfred", "l_name":"Zolles", "city":"Langenzersdorf", "post code": 1210},
+	{"v_name":"niklas", "l_name":"Wild", "city":"", "post code": 2100},
+	{"v_name":"Petra", "l_name":"Rosenberger", "city":"Margareten", "post code": 1050},
+	{"v_name":"Werner", "l_name":"Dutter", "city":"train", "post code": 4654},
+	{"v_name":"Philipp", "l_name":"Schober", "city":"Grönitz", "post code": 9470},
+	{"v_name":"Holly", "l_name":"Moller",  "city":"Stams", "post code": 6422},
+	{"v_name":"Holly", "l_name":"Moller",  "city":"Stams", "post code": 6422},
+	{"v_name":"Piper", "l_name":"pErrish", "city":"moserwinkl", "post code": 9361},
+	{"v_name":"Philipp", "l_name":"Schober", "city":"Grönitz", "post code": 9470},
+	{"v_name":"Siegried", "l_name":"laNgrock","city":"Markersdorf", "post code": 3384},
+	{"v_name":"Janice", "l_name":"Griff", "city":"Grönitz", "post code": 9470},
+	{"v_name":"janicE", "l_name":"Griff", "city":"MosErwinkl", "post code": 9361},
+	{"v_name":"michael", "l_name":"Schöpfer", "city":"blindenmarkt", "post code": 3372},
+	{"v_name":"Niki", "l_name":"Benz", "city":"", "post code": 5422},
+	{"v_name":"Andre", "l_name":"Daimler", "city":"Göschl", "post code": ""},
+	{"v_name":"", "l_name":"Janser", "city":"Alsergrund", "post code": 1090},
+	{"v_name":"michael", "l_name":"Schöpfer", "city":"blindenmarkt", "post code": 3372}
+	]
+}
+

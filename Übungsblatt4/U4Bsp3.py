@@ -55,7 +55,7 @@ def checkPeople(people) :
 
 
 def main() :
-    json_data = getJsonFromFile("python_homework/Übungsblatt4/people.json")
+    json_data = getJsonFromFile("people.json")
 
     data = json.loads(json_data)
     data = data["people"]

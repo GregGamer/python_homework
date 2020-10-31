@@ -6,6 +6,7 @@ Gregor Wagner, 52005240
 import json
 import re
 from collections import Counter
+
 class Tweet():
     def __init__(self, time, message, user):
         self.time = time
@@ -66,7 +67,7 @@ def main():
 
 
     listCommands(commands)
-
+    
     readTweets(tweets)
     print("\nTweets successfully imported\n")
 

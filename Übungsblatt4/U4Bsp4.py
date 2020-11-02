@@ -10,17 +10,15 @@ def usage():
     print("<myProgram.py> <arg1> <arg2>")
 
 if len(sys.argv) == 3 :
-    try:
+    try :
         arg1 = int(sys.argv[1])
         arg2 = int(sys.argv[2])
-    except ValueError:
-        usage
+    except ValueError :
+        usage()
 
+    # dreht zwei Variablen um
     if arg2 < arg1 :
-        tmp = arg1
-        arg1 = arg2
-        arg2 = tmp
-
+        arg1, arg2 = arg2, arg1
 
     for i in range((arg2+1) - arg1) :
         print(i+arg1)

@@ -20,10 +20,10 @@ class Client() :
         self.socket.connect((self.host, self.port))
 
     def send(self, msg) :
-        self.socket.send(msg.encode("utf-8"))
+        self.socket.send(f"{self.nickname}: {msg}".encode("utf-8"))
 
     def receive(self) :
-        return self.socket.recv(1024).decode("utf-8")
+        return self.socket.recv(BUFFER_SIZE).decode("utf-8")
 
     def stop(self) :
         self.socket.close()
@@ -43,6 +43,7 @@ def main():
         client.send(msg)
         print(client.receive())
 
+    client.send("quit")
     client.stop()
 
 

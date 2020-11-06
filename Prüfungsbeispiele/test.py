@@ -1,13 +1,6 @@
-liste1 = [1,2,3,4]
-liste2 = [1,2,5]
+marksheet = []
+for _ in range(0,int(input())):
+    marksheet.append([input(), float(input())])
 
-ergebnis = [0,0,0,0]
-
-gleicheElemente = set(liste1) & set(liste2)
-
-print(gleicheElemente) #wichtig
-print(len(gleicheElemente))
-
-ergebnis[len(gleicheElemente)] += 1
-
-print(ergebnis)
+second_highest = sorted(list(set([marks for name, marks in marksheet])))[1]
+print('\n'.join([a for a,b in sorted(marksheet) if b == second_highest]))

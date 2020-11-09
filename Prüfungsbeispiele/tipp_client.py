@@ -1,5 +1,6 @@
 import socket
 import random
+import ast
 ######CLIENT#######
 
 ADDRESS = "127.0.0.1"
@@ -10,8 +11,8 @@ clientSocket.connect((ADDRESS, PORT))           # Client versucht Verbindung zu 
 print(f'Connection to {ADDRESS}:{PORT} is established')
 
 money = random.randint(5,15)
-
-while money < 1 or money > 20 :
+msg = ""
+while 1 < money <= 20 or msg == "quit":
     print(f"Verfügbares Spielgeld: {money}€")
     msg = input('Dein Tipp <Einstatz> <blau|gelb|rot>: ') # "1 gelb"                      # Userinput für Nachricht
     msg_data = msg.split(" ")
@@ -28,17 +29,19 @@ while money < 1 or money > 20 :
         else :
             continue
         money = money - tipp_money
+        # print(money)
     else : 
         continue
     clientSocket.send(msg.encode('utf-8'))              # msg wird an Server gesendet
 
     recvMsg = clientSocket.recv(1024).decode('utf-8')   # empfangen einer Nachricht
+    recvMsg = ast.literal_eval(recvMsg) #es formatiert string zu einer liste
     print(recvMsg)
-    # ["richtig", 2]
+    # "["richtig", 2]"
     if recvMsg[0] == "richtig" :
         money = money + recvMsg[1]
     
-    money = money + 2*tipp_money
+    # money = money + 2*tipp_money
 
 clientSocket.close()                                #ClientSocket geschlossen
 print('Verbindung geschlossen')

@@ -6,7 +6,7 @@ Gregor Wagner, 52005240
 import socket
 
 ADDRESS = "127.0.0.1"
-PORT = 6666
+PORT = 1337
 RECV_BUFFER = 1024
 
 serverSocket = socket.socket()
@@ -23,7 +23,7 @@ msg = ""
 while msg != "quit" :
     msg = clientSocket.recv(RECV_BUFFER).decode("utf-8")
     clientSocket.send(msg.encode("utf-8"))
-    print(f"{clientAddressInfo}: {msg}")
+    print(f"{msg}")
 
 serverSocket.close()
 print("Socket geschlossen")

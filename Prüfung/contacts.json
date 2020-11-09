@@ -1,0 +1,29 @@
+{
+  "contacts": [
+      {"id": 1, "fname": "Gary", "lname": "Ortiz", "country": "Austria", "birthday": "2000-05-16", "vip": false},
+      {"id": 2, "fname": "Albert", "lname": "Williamson", "country": "China", "birthday": "2001-03-11", "vip": true},
+      {"id": 3, "fname": "Mildred", "lname": "Fuller", "country": "England", "birthday": "1992-02-15", "vip": true},
+      {"id": 4, "fname": "Russell", "lname": "Robinson", "country": "Germany", "birthday": "1996-10-31", "vip": false},
+      {"id": 5, "fname": "Billy", "lname": "Russky", "country": "Austria", "birthday": "1980-02-08", "vip": false},
+      {"id": 6, "fname": "Larry", "lname": "Sanders", "country": "Canada", "birthday": "1928-01-11", "vip": false},
+      {"id": 7, "fname": "Michael", "lname": "Rice", "country": "Austria", "birthday": "1981-12-06", "vip": true},
+      {"id": 8, "fname": "Sara", "lname": "Harris", "country": "Austria", "birthday": "2014-11-05", "vip": false},
+      {"id": 9, "fname": "Phyllis", "lname": "Duncan", "country": "China", "birthday": "2001-04-02", "vip": true},
+      {"id": 10, "fname": "Roger", "lname": "Alvarez", "country": "Finland", "birthday": "2002-11-09", "vip": true},
+      {"id": 11, "fname": "Maria", "lname": "Carpenter", "country": "Sweden", "birthday": "1999-08-18", "vip": true},
+      {"id": 12, "fname": "Lori", "lname": "Edwards", "country": "Austria", "birthday": "1989-02-05", "vip": true},
+      {"id": 13, "fname": "Phillip", "lname": "Mitchell", "country": "Finland", "birthday": "1998-03-28", "vip": false},
+      {"id": 14, "fname": "Craig", "lname": "Göschl", "country": "Austria", "birthday": "1992-01-20", "vip": true},
+      {"id": 15, "fname": "Marie", "lname": "George", "country": "Mauritius", "birthday": "1994-10-26", "vip": true},
+      {"id": 16, "fname": "Jean", "lname": "Duncan", "country": "China", "birthday": "1986-11-19", "vip": true},
+      {"id": 17, "fname": "Kimberly", "lname": "Butler", "country": "Sweden", "birthday": "1987-12-29", "vip": false},
+      {"id": 18, "fname": "Heather", "lname": "Ramirez", "country": "Finland", "birthday": "1981-07-13", "vip": false},
+      {"id": 19, "fname": "Josi", "lname": "Sanders", "country": "Canada", "birthday": "1985-02-25", "vip": false},
+      {"id": 20, "fname": "Juanos", "lname": "Evans", "country": "Austria", "birthday": "1977-07-09", "vip": true},
+      {"id": 21, "fname": "Billy", "lname": "Tucker", "country": "Mauritius", "birthday": "1980-02-08", "vip": false},
+      {"id": 22, "fname": "Fred", "lname": "Webb", "country": "Brazil", "birthday": "1980-03-05", "vip": true},
+      {"id": 23, "fname": "Daniel", "lname": "Peterson", "country": "Nigeria", "birthday": "2007-10-8", "vip": false},
+      {"id": 24, "fname": "Kelly", "lname": "Gilbert", "country": "Mexico", "birthday": "1988-12-29", "vip": false},
+      {"id": 25, "fname": "Aaron", "lname": "Härt", "country": "Brazil", "birthday": "1990-08-01", "vip": false}
+  ]
+}

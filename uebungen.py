@@ -23,14 +23,11 @@ def makeFiles(uebungcount, filecount) :
 ""\"""".format(author=AUTHOR,curfilename=curfilename,matrnum=MATRNUM)
             )
 
-
-
 def main() :
     uebungcount = input("Welche Übung ist es: ")
     filecount = int(input("Wie viele Files: "))
     
     makeDirectory(uebungcount)
     makeFiles(uebungcount, filecount)
-
 
 main()

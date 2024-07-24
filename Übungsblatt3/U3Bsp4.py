@@ -9,31 +9,21 @@ import random
 def main() :
     passwordLen = 12
     passwordUp = 2
+    passwordLow = 2
     passwordNum = 2
     passwordSign = 2
-    i = 0
-    password = ""
 
-    while len(password) < passwordLen :
-        for i in range(2) :
-            if len(password) < passwordLen :
-                password += random.choice(string.ascii_lowercase)
-            
-        for i in range(passwordUp) :
-            if len(password) < passwordLen :
-                password += random.choice(string.ascii_uppercase)
-        
-        for i in range(passwordNum) :
-            if len(password) < passwordLen :
-                password += random.choice(string.digits)
-        
-        for i in range(passwordSign) :
-            if len(password) < passwordLen :
-                password += random.choice(string.punctuation)
-    
-    l = list(password)
-    random.shuffle(l)
-    password = ''.join(l)
+    password = random.choices(string.ascii_lowercase,k=passwordLow)
+    password += random.choices(string.ascii_uppercase,k=passwordUp)
+    password += random.choices(string.digits,k=passwordNum)
+    password += random.choices(string.punctuation,k=passwordSign)
+
+    everyletter = string.ascii_letters + string.digits + string.punctuation
+    password += random.choices(everyletter,k=passwordLen-len(password))
+
+    tmp = [*password]
+    random.shuffle(tmp)
+    password = ''.join(tmp)
 
     print(f"Passwort: {password} \nLänge: {passwordLen}")
 

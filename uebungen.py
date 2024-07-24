@@ -2,23 +2,26 @@
 Konsolenprogramm um mir die Übungsordnerstruktur zu erstellen
 """
 import os
+AUTHOR = "Gregor Wagner"
+MATRNUM = "52005240"
 
-def makeDirectory(uebungcount) :
-    path = "Übungsblatt"+uebungcount+""
+def makeDirectory(uebungcount:int) :
+    path = "Übungsblatt{}".format(uebungcount)
     os.mkdir(path)
 
-
 def makeFiles(uebungcount, filecount) :
-    filename = "U"+uebungcount+"Bsp"
-    path = "Übungsblatt"+uebungcount+"/"
-    author = "Gregor Wagner"
-    matrnum = "52005240"
+    filename = "U{}Bsp".format(uebungcount)
+    path = "Übungsblatt{}/".format(uebungcount)
 
     for i in range(1, filecount+1) :
-        curfilename = filename + str(i) + ".py"
-        f = open(path + curfilename, "w+")
-        f.write(f"\"\"\"\n{author}\n{curfilename} - \n{author}, {matrnum}\n\"\"\"")
-        f.close
+        curfilename = "{}{}.py".format(filename,str(i))
+        with open(path + curfilename, "w+") as file:
+            file.write("""\"""
+{author}
+{curfilename} - Uebungstitel
+{author}, {matrnum}
+""\"""".format(author=AUTHOR,curfilename=curfilename,matrnum=MATRNUM)
+            )
 
 
 
